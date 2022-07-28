@@ -1,8 +1,6 @@
 import { container } from 'tsyringe';
 
-// EXAMPLE:
+import HistoryQuoteDataSource from "../../datasources/memory/HistoryQuoteDataSource";
+import HistoryQuoteRepository from "../../repositories/HistoryQuoteRepository";
 
-// import RefreshTokenDataSource from "../../datasources/memory/RefreshTokenDataSource";
-// import RefreshTokenRepository from "../../repositories/RefreshTokenRepository";
-//
-// container.registerSingleton<RefreshTokenRepository>('RefreshTokenRepository', RefreshTokenDataSource);
+container.registerSingleton<HistoryQuoteRepository>('HistoryQuoteRepository', HistoryQuoteDataSource);
