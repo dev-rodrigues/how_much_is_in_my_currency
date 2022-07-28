@@ -1,0 +1,17 @@
+{
+   "type": "mysql",
+   "host": "db-cluster-api.cluster-cfb3cd3tmmtd.sa-east-1.rds.amazonaws.com",
+   "connectTimeout": 30000,
+   "port": 3306,
+   "username": "dygi",
+   "password": "segredo.3#",
+   "database": "dygi",
+   "insecureAuth": false,
+   "synchronize": true,
+   "logging": true,
+   "entities": ["src/datasources/db/models/*.ts"],
+   "migrations": ["src/datasources/db/migrations/*.ts"],
+   "cli": {
+      "entitiesDir": "src/datasources/db/models/"
+   }
+}

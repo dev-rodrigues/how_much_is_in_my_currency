@@ -1,0 +1,17 @@
+{
+   "type": "mysql",
+   "host": "",
+   "connectTimeout": 30000,
+   "port": 3306,
+   "username": "",
+   "password": "",
+   "database": "",
+   "insecureAuth": false,
+   "synchronize": true,
+   "logging": true,
+   "entities": ["src/datasources/db/models/*.ts"],
+   "migrations": ["src/datasources/db/migrations/*.ts"],
+   "cli": {
+      "entitiesDir": "src/datasources/db/models/"
+   }
+}
