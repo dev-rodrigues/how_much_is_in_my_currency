@@ -1,5 +1,6 @@
 import {Request, Response} from "express";
 import {container} from "tsyringe";
+
 import ShouldGetQuoteUseCaseFromGoogleUse from "../../usecases/ShouldGetQuoteUseCaseFromGoogleUse";
 
 class QuoteController {
@@ -13,9 +14,7 @@ class QuoteController {
 
             const result = await useCase.execute({from, to});
 
-            return response.status(200).json({
-                quote: result
-            });
+            return response.status(200).json(result);
 
         } catch (err) {
             return response.status(400).json({
